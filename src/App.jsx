@@ -19,9 +19,6 @@ import UserList from "./modules/UsersModule/components/UserList/UserList";
 
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.min.js";
-import "@fortawesome/fontawesome-free/css/all.min.css";
 import "./App.css";
 import VerificationAccount from "./modules/AuthenticationModule/components/VerificationAccount/VerificationAccount";
 import Favorites from "./modules/FavoritesModule/components/Favorites/Favorites";
