@@ -1,0 +1,12 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+textarea {
+  width: 100%;
+  resize: none;
+  max-height: 250px;
+  min-height: 100px;
+}

@@ -1,0 +1,117 @@
+.auth-container {
+  background-image: url(./assets/media/auth-bg.png);
+  background-image: not;
+}
+.bg-overlay {
+  background-image: linear-gradient(rgba(55, 140, 47, 0.4), rgba(0, 0, 0, 0.7));
+  background-color: linear-;
+}
+.auth-container .show-pass {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  z-index: 20;
+  cursor: pointer;
+}
+.img-container {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.error-massage {
+  height: 20px;
+  display: flex;
+  font-size: 13px;
+  align-items: center;
+  margin-top: -10px;
+}
+
+/* sidebar style */
+.sidebar-container .ps-sidebar-root {
+  background-color: transparent;
+  border: none;
+}
+.sidebar-container .ps-sidebar-container {
+  background-color: rgba(31, 38, 62, 1);
+  color: white;
+  height: 100vh;
+  border-top-right-radius: 50px;
+}
+.ps-sidebar-container .ps-menu-icon img {
+  width: 176px;
+}
+.sidebar-container .ps-sidebar-container .ps-menu-button:hover {
+  background-color: rgba(0, 146, 77, 0.1);
+  border-left-width: 10px;
+  border-left-color: rgba(0, 146, 71, 1);
+  border-left-style: solid;
+}
+/* navbar */
+.navbar .search {
+  left: 30px;
+}
+/* header */
+.header-container {
+  background-image: url("./assets/media/header-bg-svg.svg");
+  background-size: cover;
+}
+/* margin: 3rem 0 0 65px; recipeFill */
+table {
+  width: 96% !important;
+  margin: auto;
+  --bs-table-bg: transparent !important;
+}
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+  border: none !important;
+  height: 80px;
+}
+/* noData  */
+.no-data {
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* recipesfill */
+.recipes-fill {
+  background-color: rgba(240, 255, 239, 1);
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* change password */
+.modal-content {
+  /* width: 140% !important; */
+  height: auto;
+}
+
+/* mobile width */
+/* table */
+@media (max-width: 1000px) {
+  thead {
+    display: none;
+  }
+  tbody td {
+    display: block;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  tr {
+    text-align: center;
+  }
+  .img-notfound img{
+    width: 700px;
+  }
+}

@@ -1,0 +1,29 @@
+.sizefav {
+
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(15%, 1fr)
+  ); /* 5 columns on large screens */
+  gap: 50px;
+}
+
+@media (max-width: 1024px) {
+  .sizefav {
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(30%, 1fr)
+    ); /* 3 columns on medium screens */
+  }
+}
+
+@media (max-width: 600px) {
+  .sizefav {
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(100%, 1fr)
+    ); /* 1 column on small screens */
+  }
+}
+
+
