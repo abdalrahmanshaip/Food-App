@@ -61,9 +61,7 @@ export default function RecipesData() {
       });
       toast.success(respons.data.message);
       navigate("/dashboard/recipes");
-    } catch (errors) {
-
-    }
+    } catch (errors) {}
   };
   const getId = async () => {
     try {
@@ -225,9 +223,7 @@ export default function RecipesData() {
                     <input
                       id="inputTag"
                       type="file"
-                      {...register("recipeImage", {
-                        required: "recipeImage is required",
-                      })}
+                      {...register("recipeImage")}
                     />
                   </label>
                 </div>
