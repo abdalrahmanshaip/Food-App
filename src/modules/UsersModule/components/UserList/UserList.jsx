@@ -113,7 +113,7 @@ export default function UserList() {
             <input
               type="text"
               placeholder="serach here..."
-              className=" form-control ps-5 py-2 mb-sm-3"
+              className=" form-control ps-5 py-2 mb-sm-0 mb-3"
               onChange={(e) => getNameValue(e.target.value)}
             />
           </div>

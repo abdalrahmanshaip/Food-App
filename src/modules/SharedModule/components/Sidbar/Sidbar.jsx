@@ -8,12 +8,13 @@ import ChangePass from "../../../AuthenticationModule/components/changepass/Chan
 import { AuthContext } from "../../../context/AuthContext";
 
 export default function SidBar() {
+  const [toggled, setToggled] = useState(false);
   const {loginData} = useContext(AuthContext)
   // const [group, setGroup] = useState('')
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-  const [isCollapsed, setIsCollapsed] = useState(false);
+  const [isCollapsed, setIsCollapsed] = useState(true);
   const toogleCollapsed = () => {
     setIsCollapsed(!isCollapsed);
   };
@@ -32,7 +33,7 @@ export default function SidBar() {
       </Modal>
 
       <div className="sidebar-container">
-        <Sidebar collapsed={isCollapsed}>
+        <Sidebar collapsed={isCollapsed} className={`${isCollapsed ? "" : "position-absolute"}`}>
           <Menu>
             <MenuItem
               icon={<img src={toggler} alt="" className="toggler-icon" />}

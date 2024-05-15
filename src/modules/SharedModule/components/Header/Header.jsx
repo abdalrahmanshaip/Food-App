@@ -1,6 +1,6 @@
 export default function Header({ title, sectitle, description, imgurl }) {
   return (
-    <div className="container-fluid p-5 header-container col-lg-12 col-md-12 col-sm-12 mt-4">
+    <div className="header-container  sm-m-5 mt-2 container-fluid  p-4 rounded-4 col-11 col-lg-11 col-md-10 col-sm-10  me-5">
       <div className="row align-items-center">
         <div className="col-md-8">
           <div className="content d-flex align-items-center ms-4">
@@ -11,7 +11,7 @@ export default function Header({ title, sectitle, description, imgurl }) {
         </div>
         <div className="col-md-4">
           <div className="img text-center">
-            <img src={imgurl} alt="" className="img-fluid bg-transparent"/>
+            <img src={imgurl} alt="" className="img-fluid bg-transparent" />
           </div>
         </div>
       </div>

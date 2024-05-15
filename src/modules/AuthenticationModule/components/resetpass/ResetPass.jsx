@@ -37,7 +37,7 @@ export default function ResetPass() {
       <div className="auth-container">
         <div className="container-fluid bg-overlay">
           <div className="row vh-100 justify-content-center align-items-center">
-            <div className="col-md-8 col-lg-6  col-sm-10 bg-white border border-3 p-4 rounded-4">
+            <div className="col-md-8 col-lg-6 col-11 col-sm-10 bg-white border border-3 p-4 rounded-4">
               <div className="img-container text-center">
                 <img src={logo} alt="" className="w-50" />
               </div>

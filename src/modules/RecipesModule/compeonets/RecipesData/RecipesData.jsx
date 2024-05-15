@@ -12,6 +12,7 @@ export default function RecipesData() {
   let { id } = useParams();
 
   const [editById, setEditById] = useState([]);
+  console.log(editById);
 
   const [categoriesList, setCategoriesList] = useState([]);
   const [tagList, setTagList] = useState([]);
@@ -97,6 +98,16 @@ export default function RecipesData() {
     getCategories();
     getTags();
     getId();
+    if (editById) {
+      setValue("name", editById.name);
+      setValue("tagId", editById?.tag?.id);
+      setValue("price", editById.price);
+      setValue(
+        "categoriesIds",
+        editById && editById.categorie ? editById.category[0].id : ""
+      );
+      setValue("description", editById.description);
+    }
   }, []);
   return (
     <>
@@ -108,7 +119,7 @@ export default function RecipesData() {
               <form onSubmit={handleSubmit(id ? handleEdit : onSubmit)}>
                 <div className="input-group mb-4">
                   <input
-                    defaultValue={editById ? editById.name : ""}
+                    // defaultValue={editById ? editById.name : ""}
                     type="text"
                     className="form-control bg-light"
                     placeholder="Recipe Name"
@@ -133,9 +144,6 @@ export default function RecipesData() {
                     },
                   })}
                 >
-                  <option selected value={editById?.tag?.id}>
-                    {editById ? editById?.tag?.name : "Open this select menu"}
-                  </option>
                   {tagList.map((tag) => (
                     <option key={tag.id} value={tag.id}>
                       {tag.name}
@@ -149,7 +157,6 @@ export default function RecipesData() {
                 )}
                 <div className="input-group mb-4 ">
                   <input
-                    defaultValue={id ? editById.price : ""}
                     type="number"
                     min={1}
                     max={1000}
@@ -179,7 +186,6 @@ export default function RecipesData() {
                     },
                   })}
                 >
-                  <option selected>Open this select menu</option>
                   {categoriesList.map((categorie) => (
                     <option key={categorie.id} value={categorie.id}>
                       {categorie.name}
@@ -193,7 +199,6 @@ export default function RecipesData() {
                 )}
                 <div className="input-group mb-4">
                   <textarea
-                    defaultValue={id ? editById.description : ""}
                     aria-hidden
                     rows="4"
                     cols="50"
@@ -226,6 +231,11 @@ export default function RecipesData() {
                       {...register("recipeImage")}
                     />
                   </label>
+                  <img
+                    src={`https://upskilling-egypt.com:3006/${editById.imagePath}`}
+                    width={100}
+                    alt=""
+                  />
                 </div>
                 {errors.recipeImage && (
                   <p className="alert alert-danger error-massage">

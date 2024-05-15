@@ -236,13 +236,13 @@ export default function RecipesList() {
             <input
               type="text"
               placeholder="serach here..."
-              className=" form-control ps-5 py-2 mb-sm-3"
+              className=" form-control ps-5 py-2 mb-sm-0 mb-3"
               onChange={(e) => getNameValue(e.target.value)}
             />
           </div>
           <div className="col-md-3 position-relative">
             <select
-              className="form-control ps-4 py-2 mb-sm-3"
+              className="form-control ps-4 py-2 mb-sm-0 mb-3"
               aria-label="Default select example"
               onChange={(e) => getTagId(e.target.value)}
             >

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function RecipesFill() {
   return (
-    <div className="recipes-fill m-5 container-fluid  p-4 rounded-4 col-lg-11 col-md-10 col-sm-10">
+    <div className="recipes-fill sm-m-5 mt-2 container-fluid  p-4 rounded-4 col-10 col-lg-11 col-md-10 col-sm-10">
       <div className=" container-fluid">
         <div className="row">
           <div className="col-md-6">

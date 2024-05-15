@@ -49,6 +49,11 @@
   border-left-color: rgba(0, 146, 71, 1);
   border-left-style: solid;
 }
+@media (max-width: 900px) {
+  .css-1wvake5  {
+    max-width: 85px;
+  }
+}
 /* navbar */
 .navbar .search {
   left: 30px;

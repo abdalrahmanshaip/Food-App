@@ -52,7 +52,7 @@ export default function Register() {
       <div className="auth-container">
         <div className="container-fluid bg-overlay">
           <div className="row vh-100 justify-content-center align-items-center">
-            <div className="col-md-8 col-lg-6  col-sm-10 bg-white border border-3 p-4 rounded-4">
+            <div className="col-md-8 col-lg-6 col-11  col-sm-10 bg-white border border-3 p-4 rounded-4">
               <div className=" img-container">
                 <img src={logo} alt="" className="w-50" />
               </div>
@@ -62,8 +62,8 @@ export default function Register() {
                   Welcome Back! Please enter your details
                 </p>
                 <form onSubmit={handleSubmit(onSubmit)} className="row">
-                  <div className="container col-md-6 left">
-                    <div className="input-group mb-4">
+                  <div className="container col-md-6  left">
+                    <div className="input-group mb-2">
                       <span className="input-group-text" id="basic-addon1">
                         <i className="fa-solid fa-mobile-screen text-muted"></i>
                       </span>
@@ -86,7 +86,7 @@ export default function Register() {
                         {errors.userName.message}
                       </p>
                     )}
-                    <div className="input-group mb-3">
+                    <div className="input-group mb-2">
                       <span className="input-group-text" id="basic-addon1">
                         <i className="fa-solid fa-lock text-muted"></i>
                       </span>
@@ -104,7 +104,7 @@ export default function Register() {
                         {errors.country.message}
                       </p>
                     )}
-                    <div className="input-group mb-3">
+                    <div className="input-group mb-2">
                       <span className="input-group-text" id="basic-addon1">
                         <i className="fa-solid fa-lock text-muted"></i>
                       </span>
@@ -131,7 +131,7 @@ export default function Register() {
                     )}
                   </div>
                   <div className="col-md-6 right">
-                    <div className="input-group mb-4">
+                    <div className="input-group mb-2">
                       <span className="input-group-text" id="basic-addon1">
                         <i className="fa-solid fa-mobile-screen text-muted"></i>
                       </span>
@@ -154,7 +154,7 @@ export default function Register() {
                         {errors.email.message}
                       </p>
                     )}
-                    <div className="input-group mb-3">
+                    <div className="input-group mb-2">
                       <span className="input-group-text" id="basic-addon1">
                         <i className="fa-solid fa-mobile-screen text-muted"></i>
                       </span>
@@ -176,7 +176,7 @@ export default function Register() {
                         {errors.phoneNumber.message}
                       </p>
                     )}
-                    <div className="input-group mb-3">
+                    <div className="input-group mb-2">
                       <span className="input-group-text" id="basic-addon1">
                         <i className="fa-solid fa-mobile-screen text-muted"></i>
                       </span>
